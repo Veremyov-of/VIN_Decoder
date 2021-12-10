@@ -21,7 +21,7 @@ function App() {
     dispatch(variablesAddAction());
   },[]);
   return (
-    <Router>
+    <Router basename="/VIN_Decoder">
       <Routes>
         <Route exact path="/" element={<Search/>} />
         {info.map((item, index) => (
